@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Website</title>
+    <title>Document</title>
+    <style>
+        .alignment{
+            margin-top: 20%;
+            margin-left: 50%;
+            margin-right: 30%;
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+            color: coral;
+            background-color: dimgray;
+            font-weight: bold;
+        }
+        button:hover{
+            color: rgba(41, 41, 172, 0.705);
+        }
+    </style>
 </head>
 <body>
-    <h1>Click me</h1>
-    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
-    <p id="demo"></p>
+    <div class="alignment">
+        <button onclick="document.getElementById('demo').innerHTML=insult()">Click Me Now</button>
+    </div>
+    <script>
+        function insult(){
+           alert ('you are hacked!')
+        }
+    </script>
 </body>
 </html>
